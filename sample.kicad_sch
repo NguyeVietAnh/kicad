@@ -5,6 +5,819 @@
 	(uuid "4e965b2a-3b4b-4b5f-9834-5025f8d7704c")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Amplifier_Current:AD8202"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 10.795 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "AD8202"
+				(at -7.62 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8202.pdf"
+				(at 16.51 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "28V High Common-Mode Voltage, Single-Supply Difference Amplifier, 10V/V x 2V/V adjustable gain, bandwidth 50kHz, Vcc=3.5V~12V, unidirectional, SOIC-8/MSOP-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "highside HS current sense amplifier linear buffered monitor preamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*P1.27mm* MSOP*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AD8202_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AD8202_1_1"
+				(pin input line
+					(at 5.08 10.16 270)
+					(length 2.54)
+					(name "-IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "+Vs"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 2.54 -7.62 90)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 10.16 270)
+					(length 2.54)
+					(name "+IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Audio:AD1853"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 11.43 24.13 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AD1853"
+				(at 11.43 21.59 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm"
+				(at 11.43 -25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD1853.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Stereo, 24-Bit, 192 kHz, Multibit Sigma-Delta DAC, SSOP-28"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "audio dac 2ch 24bit 192kHz"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SSOP*5.3x10.2mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AD1853_0_1"
+				(rectangle
+					(start -15.24 20.32)
+					(end 15.24 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AD1853_1_1"
+				(pin power_in line
+					(at -2.54 -22.86 90)
+					(length 2.54)
+					(name "DGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -7.62 180)
+					(length 2.54)
+					(name "IREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -22.86 90)
+					(length 2.54)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 17.78 180)
+					(length 2.54)
+					(name "OUTL+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 15.24 180)
+					(length 2.54)
+					(name "OUTL-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -2.54 180)
+					(length 2.54)
+					(name "FILTR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -17.78 180)
+					(length 2.54)
+					(name "FCR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 5.08 180)
+					(length 2.54)
+					(name "OUTR-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 7.62 180)
+					(length 2.54)
+					(name "OUTR+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 22.86 270)
+					(length 2.54)
+					(name "AVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -12.7 180)
+					(length 2.54)
+					(name "FILTB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 17.78 0)
+					(length 2.54)
+					(name "MCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 0 0)
+					(length 2.54)
+					(name "IDPM1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 2.54 0)
+					(length 2.54)
+					(name "IDPM0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 12.7 180)
+					(length 2.54)
+					(name "ZEROL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -15.24 0)
+					(length 2.54)
+					(name "MUTE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -12.7 0)
+					(length 2.54)
+					(name "~{RST}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 12.7 0)
+					(length 2.54)
+					(name "L/~{R}CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 15.24 0)
+					(length 2.54)
+					(name "BCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 10.16 0)
+					(length 2.54)
+					(name "SDATA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 22.86 270)
+					(length 2.54)
+					(name "DVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -10.16 0)
+					(length 2.54)
+					(name "CLATCH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -5.08 0)
+					(length 2.54)
+					(name "CCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -7.62 0)
+					(length 2.54)
+					(name "CDATA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 7.62 0)
+					(length 2.54)
+					(name "INT4X"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 5.08 0)
+					(length 2.54)
+					(name "INT2X"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 2.54 180)
+					(length 2.54)
+					(name "ZEROR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -17.78 0)
+					(length 2.54)
+					(name "DEEMP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "MCU_Microchip_SAMD:ATSAMD21G17A-M"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1090,10 +1903,88 @@
 		)
 	)
 	(junction
+		(at 146.05 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "216b032e-be23-4ad7-8f6e-13fc16d4a6da")
+	)
+	(junction
+		(at 48.26 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "270a929f-5d40-4361-8efc-4dc7c12a3b01")
+	)
+	(junction
+		(at 17.78 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b07430b-fadf-4950-9ce0-6d9dc51cf965")
+	)
+	(junction
+		(at 48.26 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60f4b32a-e527-4e5f-83cc-9c168cf21e4c")
+	)
+	(junction
+		(at 17.78 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73a83ddf-b219-44b3-83d5-5a20c74d8d33")
+	)
+	(junction
 		(at 58.42 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a8f8ddf2-49ed-44ab-841a-cefe6fc16c87")
+	)
+	(junction
+		(at 17.78 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6bab037-a33f-4e6e-850e-3fcf5dab2d41")
+	)
+	(junction
+		(at 48.26 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e91cab38-ccac-47b7-9020-4cb6994753e3")
+	)
+	(junction
+		(at 48.26 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f79ba638-fc6d-42c9-be6b-fc770466c50e")
+	)
+	(wire
+		(pts
+			(xy 146.05 85.09) (xy 146.05 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "002e905f-1d11-4c31-b666-5e89ed71bdf0")
+	)
+	(wire
+		(pts
+			(xy 142.24 59.69) (xy 142.24 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00a7a747-235a-4811-abf0-3d382d9cbb77")
+	)
+	(wire
+		(pts
+			(xy 83.82 95.25) (xy 87.63 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0185d4ae-13ee-4e6f-8bc0-6e98fc931f12")
 	)
 	(wire
 		(pts
@@ -1107,6 +1998,116 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 31.75) (xy 48.26 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e78fea6-745e-40d1-a1fe-b5d90d61305b")
+	)
+	(wire
+		(pts
+			(xy 83.82 62.23) (xy 139.7 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20ce606e-ce13-4d17-8c71-ce55acef8177")
+	)
+	(wire
+		(pts
+			(xy 151.13 64.77) (xy 151.13 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29def47b-54a2-420f-9c49-89ffdfb66746")
+	)
+	(wire
+		(pts
+			(xy 48.26 46.99) (xy 48.26 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30c9542d-9d25-4930-831d-593e8a1e15f2")
+	)
+	(wire
+		(pts
+			(xy 48.26 49.53) (xy 48.26 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34137ce6-b70b-4cfe-87a9-d9c7341e0899")
+	)
+	(wire
+		(pts
+			(xy 13.97 45.72) (xy 13.97 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "351c65ec-01d3-42b0-ada8-e175e29ed222")
+	)
+	(wire
+		(pts
+			(xy 13.97 54.61) (xy 48.26 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45775ebb-8861-41c7-bb15-b28f7ebc0207")
+	)
+	(wire
+		(pts
+			(xy 48.26 54.61) (xy 48.26 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ab12748-b135-41e6-a32f-877666c6555f")
+	)
+	(wire
+		(pts
+			(xy 139.7 90.17) (xy 137.16 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "577e2c6c-eea5-4489-8f3d-f9f61eb1e4db")
+	)
+	(wire
+		(pts
+			(xy 87.63 95.25) (xy 87.63 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b15596f-644b-49b4-b6b1-d58b21da80e0")
+	)
+	(wire
+		(pts
+			(xy 83.82 59.69) (xy 142.24 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b29ea68-ea2c-4c60-b614-1ea30b48654b")
+	)
+	(wire
+		(pts
 			(xy 58.42 17.78) (xy 58.42 29.21)
 		)
 		(stroke
@@ -1117,6 +2118,196 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 62.23) (xy 139.7 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ea087c1-9b2d-478f-85aa-9d74417c8986")
+	)
+	(wire
+		(pts
+			(xy 48.26 57.15) (xy 48.26 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76c425df-f500-4557-9d92-8bf10704daae")
+	)
+	(wire
+		(pts
+			(xy 45.72 39.37) (xy 48.26 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "811eedf7-ddd0-4da3-bf44-d08f20649797")
+	)
+	(wire
+		(pts
+			(xy 85.09 85.09) (xy 101.6 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8443f9fb-17dd-47e2-919d-e0c0bbce59cb")
+	)
+	(wire
+		(pts
+			(xy 85.09 85.09) (xy 85.09 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a0d8429-9158-41e5-b9f1-dd850587804e")
+	)
+	(wire
+		(pts
+			(xy 17.78 45.72) (xy 17.78 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95ce4e1e-714b-4bbe-99eb-df608ac847fd")
+	)
+	(wire
+		(pts
+			(xy 48.26 31.75) (xy 48.26 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97675cf1-2879-47a3-8ef6-5279010b1f3e")
+	)
+	(wire
+		(pts
+			(xy 146.05 85.09) (xy 137.16 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98623280-0993-4e55-8aa7-b7a534fe368e")
+	)
+	(wire
+		(pts
+			(xy 22.86 27.94) (xy 45.72 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9aa49936-efec-4b23-a96b-d7393f2a7978")
+	)
+	(wire
+		(pts
+			(xy 146.05 57.15) (xy 146.05 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d8dd124-adaf-4e35-a560-33a21e8c7a9f")
+	)
+	(wire
+		(pts
+			(xy 100.33 87.63) (xy 101.6 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a45ff445-767b-4930-82ef-2efbdf7d7b56")
+	)
+	(wire
+		(pts
+			(xy 83.82 64.77) (xy 151.13 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a63cbbb0-4d81-4774-82e0-c87003c7a477")
+	)
+	(wire
+		(pts
+			(xy 85.09 92.71) (xy 83.82 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aebcfe08-0965-4582-a21a-54e4480de0d7")
+	)
+	(wire
+		(pts
+			(xy 48.26 58.42) (xy 48.26 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1866c48-aa20-44f3-b451-cc8fc059f616")
+	)
+	(wire
+		(pts
+			(xy 17.78 52.07) (xy 48.26 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bff02906-5dd4-4929-ac34-871e7ca43d39")
+	)
+	(wire
+		(pts
+			(xy 17.78 45.72) (xy 13.97 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c69e5665-8f65-47ce-a4d6-14b48e87d523")
+	)
+	(wire
+		(pts
+			(xy 33.02 33.02) (xy 33.02 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9c53c8d-1ad2-4135-bf18-ccd74a81411b")
+	)
+	(wire
+		(pts
+			(xy 87.63 88.9) (xy 100.33 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc428d7e-4922-488a-98ac-ece18f34c534")
+	)
+	(wire
+		(pts
+			(xy 137.16 87.63) (xy 142.24 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cde82f3f-90d9-46e6-83f5-c3acb62381b1")
+	)
+	(wire
+		(pts
 			(xy 57.15 29.21) (xy 58.42 29.21)
 		)
 		(stroke
@@ -1124,6 +2315,106 @@
 			(type default)
 		)
 		(uuid "e8fe6ace-d3e7-4fd0-bebe-a50d58b73c77")
+	)
+	(wire
+		(pts
+			(xy 22.86 33.02) (xy 22.86 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9018579-2d2c-4449-bed0-d1bef3a58269")
+	)
+	(wire
+		(pts
+			(xy 83.82 57.15) (xy 146.05 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e913b927-66de-4fde-8bea-f6e7b7d39b2b")
+	)
+	(wire
+		(pts
+			(xy 17.78 52.07) (xy 17.78 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e935af5c-5a5b-4d48-baf1-ea3ce06c1152")
+	)
+	(wire
+		(pts
+			(xy 151.13 92.71) (xy 137.16 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebf2784f-a963-4ce7-8773-801bb7989f6a")
+	)
+	(wire
+		(pts
+			(xy 45.72 27.94) (xy 45.72 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee074b69-d37e-48d1-ab54-afa3e9dc5ba0")
+	)
+	(wire
+		(pts
+			(xy 17.78 43.18) (xy 17.78 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0289876-d630-4c0c-a9ef-8b05748fceeb")
+	)
+	(wire
+		(pts
+			(xy 100.33 88.9) (xy 100.33 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6fbec14-2dcc-4769-a084-af0505d88455")
+	)
+	(wire
+		(pts
+			(xy 17.78 58.42) (xy 48.26 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8150688-09ef-4cb5-9e7d-46ebe1fd6ddb")
+	)
+	(wire
+		(pts
+			(xy 17.78 48.26) (xy 17.78 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb58989e-4a35-4443-a9bc-4c3b65277cb4")
+	)
+	(wire
+		(pts
+			(xy 137.16 92.71) (xy 137.16 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fda51241-3c33-41b0-8e39-92e14ff426ae")
 	)
 	(symbol
 		(lib_id "MCU_Microchip_SAMD:ATSAMD21G17A-M")
@@ -1397,6 +2688,241 @@
 			(project ""
 				(path "/4e965b2a-3b4b-4b5f-9834-5025f8d7704c"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Audio:AD1853")
+		(at 119.38 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed6fdd50-3967-4e92-afd8-2ea6bfb394e3")
+		(property "Reference" "U3"
+			(at 124.1141 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AD1853"
+			(at 124.1141 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm"
+			(at 130.81 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD1853.pdf"
+			(at 119.38 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Stereo, 24-Bit, 192 kHz, Multibit Sigma-Delta DAC, SSOP-28"
+			(at 119.38 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "4e16b617-9ddd-49f6-8738-6bcf84b65a8a")
+		)
+		(pin "27"
+			(uuid "6fff297f-be27-408b-a259-e3fddb07aa93")
+		)
+		(pin "19"
+			(uuid "f5c107b9-e3dc-4235-b7ac-de22581b58d9")
+		)
+		(pin "1"
+			(uuid "10ed1186-1d09-4db7-b576-1e7af71476ba")
+		)
+		(pin "12"
+			(uuid "b6f25ab6-d3ab-4e35-8b9a-6246bac10699")
+		)
+		(pin "23"
+			(uuid "f5caa919-6edf-4673-b40a-bfb8250cbcfe")
+		)
+		(pin "26"
+			(uuid "8566d2ee-107a-4149-9497-3729da9c7c73")
+		)
+		(pin "20"
+			(uuid "f2b6d696-af30-4ba8-bb2f-69cd412a36d9")
+		)
+		(pin "21"
+			(uuid "37c9fd2a-80b2-4e58-8678-ff3ffe2c5079")
+		)
+		(pin "14"
+			(uuid "92638e79-2afb-41b4-8792-2ee0b926f44a")
+		)
+		(pin "22"
+			(uuid "1d43ffea-b65a-47ce-9a5a-35e2a50363d8")
+		)
+		(pin "11"
+			(uuid "ccf47830-56fe-4120-a3da-fa41b37c837b")
+		)
+		(pin "2"
+			(uuid "0738b1cb-9c5e-49e4-98bd-a51e33463cf5")
+		)
+		(pin "15"
+			(uuid "913948ce-650e-4529-916f-3f0fdd6ba0d6")
+		)
+		(pin "5"
+			(uuid "b6d0d5ad-3463-4ce2-9340-680cf4b5e0d6")
+		)
+		(pin "24"
+			(uuid "75e2b2c5-a5d3-4782-bad0-fb7e15b3bea9")
+		)
+		(pin "10"
+			(uuid "2df92b76-af7e-431d-a14f-d3a28b89ec64")
+		)
+		(pin "28"
+			(uuid "7b364fde-626a-44f0-82bc-0d6bd00381c9")
+		)
+		(pin "9"
+			(uuid "ce5383c4-6542-4bb3-ad26-93b9b5d85a2c")
+		)
+		(pin "8"
+			(uuid "ae7e6ed4-58ff-4a06-b493-ffda44873d5b")
+		)
+		(pin "4"
+			(uuid "d9dbedee-4131-4795-ac5c-8eb745e82821")
+		)
+		(pin "3"
+			(uuid "c633ed2b-516f-4c2b-b2e6-a7e1fb05d8ea")
+		)
+		(pin "17"
+			(uuid "6d4a4486-ef18-45fb-8e8e-caadee3bb922")
+		)
+		(pin "18"
+			(uuid "4f80eab7-86ab-4166-9e3d-b9bd0c3d89f5")
+		)
+		(pin "6"
+			(uuid "6767493a-5af4-4a0e-9639-bff00687d22a")
+		)
+		(pin "16"
+			(uuid "d4416356-62f7-4a89-8a86-fa314d2e3a36")
+		)
+		(pin "25"
+			(uuid "b0dfb65d-101a-47b2-8e3e-1ab13bf31096")
+		)
+		(pin "13"
+			(uuid "c4b02c51-16d7-45bd-9025-95943a829d41")
+		)
+		(instances
+			(project ""
+				(path "/4e965b2a-3b4b-4b5f-9834-5025f8d7704c"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Current:AD8202")
+		(at 27.94 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f736b2c7-c3a1-47c9-8721-1c6bc7feff2a")
+		(property "Reference" "U2"
+			(at 40.64 36.8614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AD8202"
+			(at 40.64 39.4014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8202.pdf"
+			(at 44.45 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "28V High Common-Mode Voltage, Single-Supply Difference Amplifier, 10V/V x 2V/V adjustable gain, bandwidth 50kHz, Vcc=3.5V~12V, unidirectional, SOIC-8/MSOP-8"
+			(at 27.94 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "b4e97590-3450-437c-8782-e2f27baa4652")
+		)
+		(pin "6"
+			(uuid "67e2fff4-c331-41bc-a5e3-007f936e6ccd")
+		)
+		(pin "1"
+			(uuid "75106630-a440-4212-bf1e-8ac2528ad9e8")
+		)
+		(pin "2"
+			(uuid "d306466f-2799-42ef-9b08-da782b59a025")
+		)
+		(pin "7"
+			(uuid "51f359a5-4170-4486-959e-37b47c586c1b")
+		)
+		(pin "3"
+			(uuid "390f9ff0-667e-487e-af53-4c634bf2ce6f")
+		)
+		(pin "5"
+			(uuid "949b40e3-df45-4512-b5bc-235526e114bc")
+		)
+		(pin "8"
+			(uuid "2d4f1cc0-6125-47c0-b589-69154c9ab6d0")
+		)
+		(instances
+			(project ""
+				(path "/4e965b2a-3b4b-4b5f-9834-5025f8d7704c"
+					(reference "U2")
 					(unit 1)
 				)
 			)
